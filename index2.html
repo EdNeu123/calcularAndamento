@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andamento de Projetos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Andamento de Projetos</h1>
+        <label for="nomeProjeto">Nome do Projeto:</label>
+        <input type="text" id="nomeProjeto" placeholder="Digite o nome do projeto"><br><br>
+        
+        <label for="dataInicio">Data de Início:</label>
+        <input type="date" id="dataInicio"><br><br>
+        
+        <label for="dataFim">Previsão de Término:</label>
+        <input type="date" id="dataFim"><br><br>
+        
+        <button onclick="calcularAndamento()">Calcular Andamento</button>
+    </div>
+
+    <!-- Modal (pop-up) -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="fecharModal()">&times;</span>
+            <h2>Resultados do Andamento</h2>
+            <p id="resultadoInicioHoje"></p>
+            <p id="resultadoHojeFim"></p>
+            <button onclick="fecharModal()">OK</button>
+        </div>
+    </div>
+
+    <!-- Histórico de projetos -->
+    <div class="historico">
+        <h2>Últimos 5 Projetos</h2>
+        <ul id="listaHistorico"></ul>
+        <button onclick="limparHistorico()">Limpar Histórico</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
