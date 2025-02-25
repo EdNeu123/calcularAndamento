@@ -15,6 +15,7 @@
         <button class="logout-button" onclick="sair()">Sair</button>
     </header>
 
+
     <div class="container">
         <h1>Andamento de Projetos</h1>
         <label for="nomeProjeto">Nome do Projeto:</label>
@@ -25,6 +26,12 @@
         
         <label for="dataFim">Previsão de Término:</label>
         <input type="date" id="dataFim"><br><br>
+  
+        <label for="TasksTotal">Total de Tasks do Projeto:</label>
+        <input type="ParseInt" id="TasksTotal"><br><br>
+
+        <label for="TasksFinalizadas">Tasks Concluidas do Projeto:</label>
+        <input type="ParseInt" id="TasksFinalizadas"><br><br>
         
         <button onclick="calcularAndamento()">Calcular Andamento</button>
     </div>
@@ -36,6 +43,7 @@
             <h2>Resultados do Andamento</h2>
             <p id="resultadoInicioHoje"></p>
             <p id="resultadoHojeFim"></p>
+            <p id="Tasks"></p>
             <button onclick="fecharModal()">OK</button>
         </div>
     </div>

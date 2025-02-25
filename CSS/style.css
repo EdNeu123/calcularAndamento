@@ -2,6 +2,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     display: flex;
+
     justify-content: center; /* Centraliza horizontalmente */
     align-items: flex-start; /* Alinha os itens no topo */
     height: 100vh;
@@ -35,7 +36,7 @@ header {
 }
 
 #nomeUsuario {
-    color: #ffeb3b; /* Amarelo para destacar o nome */
+    color: #ffffff;
     font-style: italic;
 }
 
@@ -59,8 +60,7 @@ header {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 400px;
+    width: 700px;
     margin-top: 80px; /* Espaço para o cabeçalho */
 }
 
