@@ -25,7 +25,6 @@ Ferramenta completa para gestão e cálculo de prazos em projetos, com sistema d
   - CSS3 moderno (Flexbox/Grid)
   - JavaScript ES6+
 - **Backend** (se aplicável):
-  - Node.js com Express
   - Armazenamento em localStorage ou banco de dados simples
 
 ## 🚀 Como Usar
